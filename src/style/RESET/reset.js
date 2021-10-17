@@ -26,8 +26,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 ::-webkit-scrollbar {
+  width: 0px;               /* width of the entire scrollbar */
+  height: 0px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a0a0a;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
   width: 4px;               /* width of the entire scrollbar */
   height: 6px;               /* width of the entire scrollbar */
 }
@@ -35,6 +44,7 @@ table {
 ::-webkit-scrollbar-thumb {
   background-color: #0a0a0a;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
+}
 }
 
 

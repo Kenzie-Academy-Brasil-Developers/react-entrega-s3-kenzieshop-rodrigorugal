@@ -1,15 +1,10 @@
-import { Link } from "@material-ui/core";
 import { HeaderStyle } from "./style";
-
+import { useSelector } from "react-redux";
 const HeaderComponent = ({ altura }) => {
-  console.log("altura", altura);
+  const { cart } = useSelector((state) => state);
   return (
     <HeaderStyle height={`${altura}`}>
       <h1>KenzieFruits</h1>
-
-      <nav>
-        <Link href="#" underline="hover" />
-      </nav>
     </HeaderStyle>
   );
 };

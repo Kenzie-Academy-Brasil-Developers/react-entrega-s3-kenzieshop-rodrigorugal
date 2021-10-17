@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Fruit, ImgStyled } from "./styled";
+import { Fruit, ListFruits, ShowFruits } from "./styled";
 import { addCartThunk } from "../../store/modules/Cart/thunks";
 
 const ProductList = () => {
@@ -12,8 +12,8 @@ const ProductList = () => {
   };
 
   return (
-    <div>
-      <ul>
+    <ShowFruits>
+      <ListFruits>
         {fruits.map((item) => (
           <Fruit key={item.id} image={item.image}>
             <h1>{item.name}</h1>
@@ -28,8 +28,8 @@ const ProductList = () => {
             </p>
           </Fruit>
         ))}
-      </ul>
-    </div>
+      </ListFruits>
+    </ShowFruits>
   );
 };
 

@@ -5,6 +5,17 @@ export const ImgStyled = styled.img`
   height: 30%;
 `;
 
+export const ListFruits = styled.ul`
+  height: 99%;
+  width: 98%;
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
 export const Fruit = styled.li`
   background-color: #ffffff;
   background-image: url(${(prop) => prop.image});
@@ -12,8 +23,8 @@ export const Fruit = styled.li`
   background-repeat: no-repeat;
   background-size: contain;
 
-  height: 230px;
-  width: 150px;
+  min-height: 180px;
+  min-width: 160px;
   margin: 10px;
   padding: 10px 0;
   border-radius: 20px;
@@ -45,5 +56,24 @@ export const Fruit = styled.li`
     border: none;
     font-size: 22px;
     text-align: center;
+    transition: 0.5s;
+
+    &:hover {
+      box-shadow: 0 0 8px 2px #56b803;
+      transform: scale(110%);
+    }
   }
+`;
+
+export const ShowFruits = styled.div`
+  min-height: 60vh;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 0 5px;
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

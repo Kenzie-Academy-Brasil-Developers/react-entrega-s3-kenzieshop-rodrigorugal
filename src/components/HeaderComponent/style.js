@@ -11,6 +11,22 @@ export const HeaderStyle = styled.header`
   h1 {
     color: #f6f6f6;
   }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `;
 // verde claro #ace573
 // verde forte #56b803
+
+export const ShowQuantityCart = styled.div`
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: red;
+  border-radius: 20px;
+  color: aliceblue;
+
+  font-size: 16px;
+  font-weight: 700;
+`;

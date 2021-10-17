@@ -5,5 +5,8 @@ export const addCartThunk = (cartItem) => (dispatch, getState) => {
 };
 
 export const deleteCartThunk = (cartItem) => (dispatch, getState) => {
-  dispatch(deleteToCart(cartItem));
+  const { cart } = getState();
+  const filteredCart = cart.filter((item) => item.id !== cartItem);
+
+  dispatch(deleteToCart(filteredCart));
 };
