@@ -22,7 +22,7 @@ export const BodyStyled = styled.div`
   overflow: auto;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 `;

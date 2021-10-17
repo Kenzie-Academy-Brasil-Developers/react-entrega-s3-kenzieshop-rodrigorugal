@@ -7,12 +7,12 @@ export const ImgStyled = styled.img`
 
 export const ListFruits = styled.ul`
   height: 99%;
-  width: 98%;
+  width: 96%;
 
   overflow: auto;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 `;
 
@@ -23,8 +23,8 @@ export const Fruit = styled.li`
   background-repeat: no-repeat;
   background-size: contain;
 
-  min-height: 180px;
-  min-width: 160px;
+  min-height: 330px;
+  min-width: 260px;
   margin: 10px;
   padding: 10px 0;
   border-radius: 20px;
@@ -57,6 +57,7 @@ export const Fruit = styled.li`
     font-size: 22px;
     text-align: center;
     transition: 0.5s;
+    cursor: pointer;
 
     &:hover {
       box-shadow: 0 0 8px 2px #56b803;
@@ -66,8 +67,8 @@ export const Fruit = styled.li`
 `;
 
 export const ShowFruits = styled.div`
-  min-height: 60vh;
-  width: 90%;
+  height: 90%;
+  width: 51%;
   background-color: #ffffff;
   border-radius: 30px;
   padding: 0 5px;

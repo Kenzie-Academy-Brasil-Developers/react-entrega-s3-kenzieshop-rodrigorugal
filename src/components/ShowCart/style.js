@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ShowFruitsCart = styled.div`
-  min-height: 60vh;
-  width: 90%;
+  height: 90%;
+  width: 40%;
   margin: 10px 0;
   background-color: #ffffff;
   border-radius: 30px;
@@ -12,11 +12,10 @@ export const ShowFruitsCart = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 `;
 
 export const ListFruitsCart = styled.ul`
-  height: 90%;
+  max-height: 85%;
   width: 98%;
 
   overflow: auto;
@@ -52,7 +51,7 @@ export const FruitCart = styled.li`
 `;
 
 export const BoxImage = styled.div`
-  height: 100%;
+  height: 12vh;
   width: 30%;
   background-image: url(${(prop) => prop.image});
   background-position: center;
